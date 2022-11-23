@@ -1,0 +1,17 @@
+name: flutter_segment
+repository: https://github.com/la-haus/flutter-segment
+
+packages:
+  - packages/**
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
+
+scripts:
+  analyze:
+    exec: dart analyze .
+
+  format:
+    run: flutter format lib/flutter_segment.dart lib/src/ test/ example/lib/ example/lib/main.dart
+    description: format the code to comply with code style
